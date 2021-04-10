@@ -21,6 +21,37 @@ div.logo {
     color: #bcc3c7;
 }
 
+.hamburg {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.navigation-icon {
+    position: relative;
+}
+.navigation-icon,
+.navigation-icon::after,
+.navigation-icon::before {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    display: inline-block;
+}
+.navigation-icon::after,
+.navigation-icon::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+}
+.navigation-icon::after {
+    top: 7px;
+}
+.navigation-icon::before {
+    top: -7px;
+}
+
 ul.nav-links {
     display: flex;
     margin: 0;
@@ -814,11 +845,11 @@ div.footer h6 {
         /* justify-content: center; */
         /* align-items: center; */
         /* padding-top: 3rem; */
-        /* flex-direction: column; */
+        flex-direction: column;
     }
     
     input[type="text"] {
-        /* margin-right: 0px; */
+        margin-right: 0px;
         /* padding: 10px 20px; */
         width: 100%;
         /* font-size: 1rem; */
@@ -826,10 +857,10 @@ div.footer h6 {
     }
     
     input[type="email"] {
-        /* margin-right: 0px; */
+        margin-right: 0px;
         /* padding: 10px 20px; */
         width: 100%;
-        /* margin-top: 2rem; */
+        margin-top: 2rem;
         /* font-size: 1rem; */
     }
     
